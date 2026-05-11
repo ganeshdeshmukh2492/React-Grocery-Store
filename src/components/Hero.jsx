@@ -1,6 +1,6 @@
 import {  CalendarCheck } from 'lucide-react'
 import React from 'react'
-import Veg from'../assets/veg.png'
+import Grocery from'../assets/grocery.png'
 const hero = () => {
   return (
     <div>
@@ -21,7 +21,7 @@ const hero = () => {
                 </a>
             </div>
             <div className='flex justify-center'>
-                <img src={Veg} alt="Grocery" className='w-80 lg:w-107.29 rounded-4xl' />
+                <img src={Grocery} alt="Grocery" className='w-80 lg:w-107.29 rounded-4xl' />
 
             </div>
         </div>

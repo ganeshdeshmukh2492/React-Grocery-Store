@@ -62,8 +62,4 @@ const Navbar = () => {
   );
 };
 
-
-
-jdhfjdfhsjfh
-
 export default Navbar
