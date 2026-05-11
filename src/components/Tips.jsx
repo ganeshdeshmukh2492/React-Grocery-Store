@@ -1,0 +1,82 @@
+import React, { useState } from 'react'
+import { FaAppleAlt, FaFish, FaSeedling, FaCheese } from 'react-icons/fa';
+
+const Tips = () => {
+  const [activeTip, setActiveTip] = useState(0);
+
+  const tips = [
+    {
+      title: 'Healthy Food Choices',
+      content: 'Choose fresh fruits, vegetables, organic products, and nutritious essentials for a healthy lifestyle.',
+      icon: <FaAppleAlt className='w-8 h-8 text-green-500' />
+    },
+    {
+      title: 'Fresh Produce',
+      content: 'Enjoy farm-fresh fruits and vegetables selected daily for quality and freshness.',
+      icon: <FaSeedling className='w-8 h-8 text-green-500' />
+    },
+    {
+      title: 'Dairy Products',
+      content: 'Shop fresh milk, cheese, butter, yogurt, and other dairy essentials every day.',
+      icon: <FaCheese className='w-8 h-8 text-green-500' />
+    },
+    {
+      title: 'Fresh Seafood',
+      content: 'Get fresh and high-quality seafood delivered safely to your home.',
+      icon: <FaFish className='w-8 h-8 text-green-500' />
+    }
+  ];
+
+  return (
+    <section id='tips' className='scroll-mt-20 max-w-6xl mx-auto px-4 py-12'>
+
+      <div className='text-center mb-12'>
+        <h2 className='text-3xl md:text-4xl font-bold text-gray-800 mb-3'>
+          Healthy Eating Tips
+        </h2>
+        <p className='text-lg text-gray-600 max-w-2xl mx-auto'>
+          Make smarter food choices for a healthier lifestyle.
+        </p>
+      </div>
+
+      <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mb-8'>
+        {tips.map((tip, index) => (
+          <button
+            key={index}
+            onClick={() => setActiveTip(index)}
+            className={`p-4 rounded-xl transition-all duration-300 flex flex-col items-center ${
+              activeTip === index
+                ? 'bg-white shadow-lg border-b-4 border-green-400'
+                : 'bg-gray-100 hover:bg-green-200'
+            }`}
+          >
+            <div className='mb-2'>{tip.icon}</div>
+            <h3 className='font-medium text-gray-800 text-sm md:text-base'>
+              {tip.title}
+            </h3>
+          </button>
+        ))}
+      </div>
+
+      <div className='bg-linear-to-r from-green-50 to-green-100 rounded-2xl p-8 shadow-sm'>
+        <div className='flex flex-col md:flex-row items-center gap-6'>
+          <div className='shrink-0 bg-white p-6 rounded-xl shadow-md'>
+            {tips[activeTip].icon}
+          </div>
+
+          <div>
+            <h3 className='text-2xl font-bold text-gray-800 mb-3'>
+              {tips[activeTip].title}
+            </h3>
+            <p className='text-gray-600 text-lg leading-relaxed'>
+              {tips[activeTip].content}
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  )
+}
+
+export default Tips

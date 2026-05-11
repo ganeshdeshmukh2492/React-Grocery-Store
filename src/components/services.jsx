@@ -24,7 +24,6 @@ const serviceData = [
     desc: "Safe and secure packaging for all grocery items.",
   },
 ];
-
 const Services = () => {
   return (
     <section
@@ -41,7 +40,6 @@ const Services = () => {
             delivered with convenience and care.
           </p>
         </div>
-
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {serviceData.map((service, index) => (
             <motion.div
@@ -52,7 +50,8 @@ const Services = () => {
             >
               <div className="mb-4">{service.Icon}</div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-gray-600">{service.desc}</p>
+              <p className="text-gray-600">{service.desc}
+               </p>
             </motion.div>
           ))}
         </div>
