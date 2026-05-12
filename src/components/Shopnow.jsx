@@ -20,6 +20,14 @@ const Shopnow = () => {
     { name: "Bread", qty: 2, price: 80 },
     { name: "Apple", qty: 5, price: 100 },
     { name: "Mango", qty: 10, price: 50 },
+    { name: "Banana", qty: 12, price: 60 },
+    { name: "Potato", qty: 1, price: 20 },
+    { name: "Watermelon", qty: 1, price: 10 },
+    { name: "Spinach", qty: 1, price: 50 },
+    { name: "Curd", qty: 1, price: 40 },
+    { name: "Paste", qty: 2, price: 80 },
+    { name: "chips", qty: 5, price: 50 },
+    { name: "Coca cola", qty: 1, price: 30 },
   ];
 
   const availablePincode = [
@@ -52,7 +60,7 @@ const prevStep = () => {
     >
       <div className='max-w-4xl mx-auto'>
 
-        {/* Heading */}
+        
         <div className='text-center mb-12'>
           <h1 className='text-4xl font-bold text-gray-800 mb-3'>
             Get Fresh Groceries Delivered
@@ -63,7 +71,7 @@ const prevStep = () => {
           </p>
         </div>
 
-        {/* Progress Steps */}
+        
         <div className='mb-12'>
           <div className='relative'>
 
@@ -116,7 +124,7 @@ const prevStep = () => {
           </div>
         </div>
 
-        {/* Step 1 */}
+        
         <div className='bg-white rounded-3xl shadow-xl p-8'>
 
           {activeStep === 1 && (
