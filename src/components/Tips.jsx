@@ -57,13 +57,11 @@ const Tips = () => {
           </button>
         ))}
       </div>
-
       <div className='bg-linear-to-r from-green-50 to-green-100 rounded-2xl p-8 shadow-sm'>
         <div className='flex flex-col md:flex-row items-center gap-6'>
           <div className='shrink-0 bg-white p-6 rounded-xl shadow-md'>
             {tips[activeTip].icon}
           </div>
-
           <div>
             <h3 className='text-2xl font-bold text-gray-800 mb-3'>
               {tips[activeTip].title}
@@ -74,7 +72,18 @@ const Tips = () => {
           </div>
         </div>
       </div>
+  <div className='mt-8 flex justify-center'>
+    <div className=' flex space-x-2'>
+      {tips.map((_,index)=>(
+        <button key={index} onClick={()=> setActiveTip(index)}
+        className={` w-3 h-3 rounded-full transition-all ${activeTip===index
+          ? ' bg-green-500' 
+          : ' bg-gray-300'}`} aria-label={` Go to tip ${index+1}`}>
+          </button>
+      ))}
+    </div>
 
+  </div>
     </section>
   )
 }
