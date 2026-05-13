@@ -28,7 +28,7 @@ const Services = () => {
   return (
     <section
       id="Services"
-      className="scroll-mt-20 bg-linear-to-br from-white to-green-50 py-20"
+      className="scroll-mt-20 bg-linear-to-br  py-20 bg-green-50"
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">

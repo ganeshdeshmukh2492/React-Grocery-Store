@@ -61,8 +61,8 @@ const Categories = () => {
   return (
     <section id='Categories' className='scroll-mt-20 relative py-16 bg-linear-to-r from-green-50 to-green-50 overflow-hidden'>
       <div className='absolute inset-0 opacity-10'>
-        <div className='absolute inset-y-0 left-0 w-1/2 bg-green-300'></div>
-        <div className='absolute inset-y-0 left-0 w-1/2 bg-green-300 right-0'></div>
+        <div className='absolute inset-y-0 left-0 w-1/2 bg-green-200'></div>
+        <div className='absolute inset-y-0 left-0 w-1/2 bg-green-200 right-0'></div>
       </div>
       <div className='relative max-w-7xl mx-auto px-4 sm:pc-6 lg:px-8
       '>

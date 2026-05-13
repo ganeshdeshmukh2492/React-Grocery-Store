@@ -12,7 +12,7 @@ const Navbar = () => {
     { href: '#categories', label: 'Categories' },
   ];
   return (
-    <header className="scroll-mt-20 bg-white shadow-md sticky top-0 z-50">
+    <header className="scroll-mt-20 bg-green-100 shadow-md sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8">
         <div className="flex items-center space-x-2">
           <ShoppingCart className="w-8 h-8 text-green-600" />

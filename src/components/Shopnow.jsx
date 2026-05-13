@@ -56,7 +56,7 @@ const prevStep = () => {
   return (
     <div
       id='shop'
-      className='scroll-mt-20 min-h-[70vh] bg-linear-to-br from-green-50 to-green-100 py-12 px-4'
+      className='scroll-mt-20 min-h-[70vh] bg-linear-to-br bg-green-50 py-12 px-4'
     >
       <div className='max-w-4xl mx-auto'>
 
