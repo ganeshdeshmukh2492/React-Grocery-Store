@@ -5,6 +5,7 @@ import Services from './components/services'
 import About from './components/About'
 import Tips from './components/Tips'
 import Shopnow from './components/Shopnow'
+import Categories from './components/Categories'
 const App = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const App = () => {
       <About/>
       <Tips/>
       <Shopnow/>
+      <Categories/>
     </div>
   )
 }
