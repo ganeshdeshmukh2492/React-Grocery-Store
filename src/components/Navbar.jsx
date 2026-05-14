@@ -38,6 +38,11 @@ const Navbar = () => {
             className="bg-green-600 text-white px-4 py-2 rounded-xl hover:bg-green-700 transition text-sm">
             Shop Now
           </a>
+          <a 
+            href="#" 
+            className="bg-green-600 text-white px-4 py-2 rounded-xl hover:bg-green-700 transition text-sm">
+            Sign in
+          </a>
         </div>
         <div className=" md:hidden">
          <button onClick={()=>setisMenuOpen}>
